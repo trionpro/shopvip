@@ -10,6 +10,7 @@ define("KUNKEYPR", true); // gán defined chống khách vào thẳng file
  // Require Hàm hệ thống
 //require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
 require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
+$root = $_SERVER['DOCUMENT_ROOT'].'/shopvip';
 $kun = new System;
 $user = $kun->user(); // gọi giá trị user đang login
 
@@ -89,20 +90,20 @@ if($token) $href_login = '/user/thongtin'; else $href_login = "/shopvip/signin.h
 if($token) $href_reg = "/shopvip/signout.html"; else $href_reg = "/shopvip/register.html";
 if($kun->is_admin()) $btn_admin = '<li><a href="/admin" class="c-btn-border-opacity-04 c-btn btn-no-focus c-btn-header btn btn-sm c-btn-border-1x c-btn-white c-btn-uppercase c-btn-sbold"><i class="icon-user"></i> Admin</a></li>'; else $btn_admin = '';
 
-    require $root.'/shopvip/view/header.php';
+    require $root.'/view/header.php';
 
 		if(!$_GET['modun'] && !$_GET['act']) {
-		    require $root.'/shopvip/view/index.php';
+		    require $root.'/view/index.php';
 		}else {
 			$modun = $_GET['modun'];
 			$act = $_GET['act'];
 
-					if (file_exists($root.'/shopvip/view/'.$modun.'/'.$act.'.php')){
-		    			require $root.'/shopvip/view/'.$modun.'/'.$act.'.php';
+					if (file_exists($root.'/view/'.$modun.'/'.$act.'.php')){
+		    			require $root.'/view/'.$modun.'/'.$act.'.php';
 					}else{
 					    echo "<center>404 - Not Found</center>";
 					}
 
 		}
 
-    require $root.'/shopvip/view/footer.php';
+    require $root.'/view/footer.php';

@@ -1,11 +1,11 @@
 <?php
 	if($kun->is_mobile()) {
 		if($kun->hienthi_web('napthe_mobile') == 1) {
-			require $root.'/shopvip/view/Widget/Top_Widget.php';			
+			require $root.'/view/Widget/Top_Widget.php';			
 		}
 	}else {		
 		if($kun->hienthi_web('napthe_pc') == 1) {
-			require $root.'/shopvip/view/Widget/Top_Widget.php';			
+			require $root.'/view/Widget/Top_Widget.php';			
 		}
 	}
 ?>
@@ -77,7 +77,7 @@
 			<a href="/vongquaykimcuong/<?php echo $kun->rewrite($row['name'])?>-<?php echo $row['id'];?>.html" class="">
 				<img src="<?php echo $kun->vongquaykimcuong_image($row['id'], 'thumb');?>"></a>
 				</div>
-					<div class="news_title"><a href="/vongquaykimcuong/<?php echo $kun->rewrite($row['name'])?>-<?php echo $row['id'];?>.html"><?php echo $row['name'];?></a></div>
+					<div class="news_title"><a href="/shopvip/vongquaykimcuong/<?php echo $kun->rewrite($row['name'])?>-<?php echo $row['id'];?>.html"><?php echo $row['name'];?></a></div>
 						<div class="news_description">
 						<p>Đã quay: <?php echo number_format($row['sudung'])?></p>
 						</div>

@@ -1,7 +1,7 @@
 .font-roboto{font-family: Roboto, sans-serif !important;}
 
 body{
-    background: linear-gradient(rgb(0 0 0 / 46%), hsl(0deg 0% 0% / 74%)),url(/images/bg.jpg) no-repeat center top;
+    background: linear-gradient(rgb(0 0 0 / 46%), hsl(0deg 0% 0% / 74%)),url(/shopvip/images/bg.jpg) no-repeat center top;
     background-size: 100%;
     background-attachment: fixed;
     background-color: #050204;
@@ -12,7 +12,7 @@ select.form-control{height: 42px;}
 
 
 .text-wait {
-    color: #5c6873; !important;
+    color: #5c6873 !important;
 }
 
 .c-content-client-logos-slider-1 .item img{margin: 0 auto}
@@ -50,7 +50,7 @@ select.form-control{height: 42px;}
     text-align: center;
     border-radius: 0px;
     padding: 8px;
-    background-image: url(/images/bg-lq-card.png) !important;
+    background-image: url(/shopvip/images/bg-lq-card.png) !important;
     background-size: 100% 100% !important;
     background-position: center;
 }
@@ -61,7 +61,7 @@ select.form-control{height: 42px;}
     text-align: center;
     border-radius: 0px;
     padding: 2px;
-    background-image: url(/images/bg-lq-card.png) !important;
+    background-image: url(/shopvip/images/bg-lq-card.png) !important;
     background-size: 100% 100% !important;
     background-position: center;
 }
@@ -254,9 +254,9 @@ select.form-control{height: 42px;}
 
 /*game-detail*/
 
-.content_post{
+/* .content_post{
 
-}
+} */
 .content_post img{
     display: block;
     margin: 15px auto;
@@ -422,9 +422,9 @@ select.form-control{height: 42px;}
 /*inbox */
 
 
-.chat{
+/* .chat{
 
-}
+} */
 .chat ol,.chat ul {
     list-style: none;
     margin: 0;
@@ -614,9 +614,9 @@ select.form-control{height: 42px;}
     display: block;
     padding: 3px;
 }
-.article-content{
+/* .article-content{
 
-}
+} */
 .article-content iframe{
     width: 560px;
     min-height: 315px;
@@ -1186,7 +1186,7 @@ label.label-custom{
 .covenient_service .list_network a.active:before, .covenient_service  .list_price a.active:before {
     content: "";
     position: absolute;
-    background: url("/assets/frontend/images/naptien_active_v2.png") no-repeat;
+    background: url("/shopvip/assets/frontend/images/naptien_active_v2.png") no-repeat;
     width: 16px;
     height: 16px;
     display: inline-block;
