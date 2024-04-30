@@ -12,7 +12,7 @@ RewriteRule ^home.html$ index.php [L]
 RewriteRule ^register.html$ index.php?modun=account&act=register_v2 [L]
 RewriteRule ^signin.html$ index.php?modun=account&act=login_v2 [L]
 RewriteRule ^verify.html$ shopvip/view/account/verify.php [L]
-RewriteRule ^signout.html$ shopvip/view/account/out.php [L]
+RewriteRule ^shopvip/signout.html$ shopvip/view/account/out.php [L]
 RewriteRule ^login-fb.html$ shopvip/view/account/fb-login.php [L]
 
 # Rewrite Pages

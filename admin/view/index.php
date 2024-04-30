@@ -4,7 +4,7 @@ reload_analytic();
 });
 function reload_analytic() {
     //$('#loading-page').show();
-                $.ajax({url: '/admin/view/analytic/main_analytic.php',
+                $.ajax({url: '/shopvip/admin/view/analytic/main_analytic.php',
                     type: 'POST',
                     dataType: 'text',
                     data: {

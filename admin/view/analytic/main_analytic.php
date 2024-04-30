@@ -1,6 +1,6 @@
 <?php
  // Require Hàm hệ thống
-require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
 $kun = new System;
 $user = $kun->user();
 
@@ -214,8 +214,8 @@ $sql = mysqli_query($kun->connect_db(), "SELECT * FROM `user_history_system` ORD
 
 <?php 
  // Require Hàm hệ thống
-require $_SERVER['DOCUMENT_ROOT'].'/config.php';
-require $_SERVER['DOCUMENT_ROOT'].'/lib/Curl/Class.Curl.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/config.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/lib/Curl/Class.Curl.php';
 $data = 'version='.$config['version'].'&';
 $data .= 'ip='.$_SERVER['REMOTE_ADDR'].'&';
 $data .= 'domain='.$_SERVER['SERVER_NAME'].'&';

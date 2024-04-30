@@ -86,7 +86,7 @@ $token = $_SESSION['token'];
 if($token) $btn_login = $user['name'].' - <o id="head_money">'.number_format($user['money']).'</o> vnd'; else $btn_login = "Đăng nhập";
 if($token) $btn_reg = "Đăng Xuất"; else $btn_reg = "Đăng Kí";
 if($token) $href_login = '/user/thongtin'; else $href_login = "/shopvip/signin.html";
-if($token) $href_reg = "/signout.html"; else $href_reg = "/shopvip/register.html";
+if($token) $href_reg = "/shopvip/signout.html"; else $href_reg = "/shopvip/register.html";
 if($kun->is_admin()) $btn_admin = '<li><a href="/admin" class="c-btn-border-opacity-04 c-btn btn-no-focus c-btn-header btn btn-sm c-btn-border-1x c-btn-white c-btn-uppercase c-btn-sbold"><i class="icon-user"></i> Admin</a></li>'; else $btn_admin = '';
 
     require $root.'/shopvip/view/header.php';

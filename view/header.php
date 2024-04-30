@@ -97,7 +97,7 @@
     <link href="/shopvip/assets/frontend/css/custom.css" rel="stylesheet" type="text/css" >
 
     <!-- ROTAGE PLUGIN -->
-    <script type="text/javascript" src="/assets/Scripts/rotate.js"></script>
+    <script type="text/javascript" src="/shopvip/assets/Scripts/rotate.js"></script>
 	
 	<!--Mouse-->
 	<style type='text/css'>
@@ -107,7 +107,7 @@
 
 <?php if($user['username']) { ?>
     <!-- PUSHER LIB BY KUNKEY -->
-    <script type="text/javascript" src="/assets/Scripts/pusher.js"></script>
+    <script type="text/javascript" src="/shopvip/assets/Scripts/pusher.js"></script>
     <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
 
         <script type="text/javascript">

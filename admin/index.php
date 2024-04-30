@@ -21,19 +21,19 @@ if(empty($_SESSION['token'])) {
 		require $root.'/view/header.php';
 
 			if(!$_GET['modun'] && !$_GET['act']) {
-			    require $root.'/shopvip/view/index.php';
+			    require $root.'/view/index.php';
 			}else {
 				$modun = $_GET['modun'];
 				$act = $_GET['act'];
 
-						if (file_exists($root.'/shopvip/view/'.$modun.'/'.$act.'.php')){
-			    			require $root.'/shopvip/view/'.$modun.'/'.$act.'.php';
+						if (file_exists($root.'/view/'.$modun.'/'.$act.'.php')){
+			    			require $root.'/view/'.$modun.'/'.$act.'.php';
 						}else{
 						    echo "<center>404 - Not Found</center>";
 						}
 			}
 
-	    require $root.'/shopvip/view/footer.php';
+	    require $root.'/view/footer.php';
 	}
 }
 

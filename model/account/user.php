@@ -14,6 +14,11 @@ if(!$u || !$p) {
 	die('<script>toastr["error"]("Hãy điền đầy đủ thông tin! ", "Lỗi")</script>');
 }
 
+// $pas=md5($_POST['password']);
+
+// var_dump($kun->check_user($u,$p));
+// exit;
+ 
 if($kun->check_user($u,$p) == true) {
 
 $token = $kun->Creat_Token(30);
