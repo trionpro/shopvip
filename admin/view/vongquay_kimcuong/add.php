@@ -33,7 +33,7 @@ defined('KUNKEYPR') or exit('Restricted Access');
                 mysqli_query($kun->connect_db(), "INSERT INTO `vongquay_kimcuong_gift` (`id_vongquay`, `item_1`, `item_2`, `item_3`, `item_4`, `item_5`, `item_6`, `item_7`, `item_8`) VALUES ('".$last_id['id']."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[0]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[1]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[2]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[3]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[4]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[5]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[6]))."', '".mysqli_real_escape_string($kun->connect_db(), json_encode($data[7]))."')");
 
                    
-                $path = $_SERVER["DOCUMENT_ROOT"]."/upload/vongquay_kimcuong";
+                $path = $_SERVER["DOCUMENT_ROOT"]."/shopvip/upload/vongquay_kimcuong";
                     // ảnh thumb
                     if ($_FILES["thumb"]["error"] == 0) {
                         $arr = explode(".", $_FILES["thumb"]["name"]);

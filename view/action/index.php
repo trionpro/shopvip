@@ -4,6 +4,7 @@ $kun->login_required();
 ?>
 
 <?php
+$root = $_SERVER['DOCUMENT_ROOT'] . '/shopvip';
 if($kun->is_admin()) {
     $level = 'Administrator'; 
 }else { 
@@ -15,7 +16,7 @@ if($kun->is_admin()) {
 if($user['fbid'] != 0) {
     $avatar = 'https://graph.facebook.com/'.$user['username'].'/picture?width=1000&height=1000';
 }else {
-    $avatar = '/images/avatar.jpg';
+    $avatar = '../images/avatar.jpg';
 }
 ?>
 

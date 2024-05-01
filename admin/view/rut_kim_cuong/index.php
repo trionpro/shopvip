@@ -7,7 +7,7 @@ $start = isset($_REQUEST['page']) ? $page * $kmess - $kmess : (isset($_GET['star
  $sql = mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2' ORDER BY `time` DESC LIMIT $start, $kmess");
  $sql2 = mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='1' ORDER BY `time` DESC LIMIT $start, $kmess");
  $tong1 = mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2'"));
- $tong2 = mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='0"));
+ $tong2 = mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='0'"));
 ?>
 
 

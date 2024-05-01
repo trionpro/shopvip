@@ -1,6 +1,6 @@
 <?php
 error_reporting(1);
-require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
 $kun = new System;
 $user = $kun->user();
 	if(!$kun->is_admin()) {

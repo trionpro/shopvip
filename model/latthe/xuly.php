@@ -9,7 +9,7 @@ $data = array(
 echo json_encode($data);
 ***/
 
-require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
 $kun = new System;
 $user = $kun->user();
 

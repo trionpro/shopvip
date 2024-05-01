@@ -117,7 +117,7 @@ if($napthe['kieunap'] == 'napcham') {
                 $.ajax({ 
                         type: 'post', 
                         dataType: "JSON",
-                        url: '/system/napthe', 
+                        url: '/shopvip/system/napthe', 
                         data: {
                             type: type,
                             amount: amount,

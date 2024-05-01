@@ -11,9 +11,9 @@ RewriteRule ^home$ index.php [L]
 RewriteRule ^home.html$ index.php [L]
 RewriteRule ^register.html$ index.php?modun=account&act=register_v2 [L]
 RewriteRule ^signin.html$ index.php?modun=account&act=login_v2 [L]
-RewriteRule ^verify.html$ shopvip/view/account/verify.php [L]
-RewriteRule ^shopvip/signout.html$ shopvip/view/account/out.php [L]
-RewriteRule ^login-fb.html$ shopvip/view/account/fb-login.php [L]
+RewriteRule ^verify.html$ view/account/verify.php [L]
+RewriteRule ^signout.html$ view/account/out.php [L]
+RewriteRule ^login-fb.html$ view/account/fb-login.php [L]
 
 # Rewrite Pages
 RewriteRule ^vongquaykimcuong/(.*)-([0-9]+).html$ index.php?modun=vongquaykimcuong&act=index&id=$2 [L]

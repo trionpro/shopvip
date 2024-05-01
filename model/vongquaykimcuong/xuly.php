@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/Core.php';
+require $_SERVER['DOCUMENT_ROOT'].'/shopvip/Core.php';
 $kun = new System;
 $user = $kun->user();
 
@@ -22,8 +22,8 @@ if(!$_SESSION['token']){
 	$msg = 'Bạn không đủ tiền trong tài khoản, vui lòng nạp thêm để quay!';
 }else{
 
-	require $_SERVER['DOCUMENT_ROOT'].'/lib/BiasedRandom/Element.php';
-	require $_SERVER['DOCUMENT_ROOT'].'/lib/BiasedRandom/Randomizer.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/shopvip/lib/BiasedRandom/Element.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/shopvip/lib/BiasedRandom/Randomizer.php';
 
 	  $randomizer = new Randomizer();
   

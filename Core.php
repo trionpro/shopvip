@@ -34,21 +34,58 @@ class System {
     return $conn;
     }
 
+    // public function access_url() {
+    //     global $root;
+    //     $user = $this->user();
+
+    //     if($user['admin'] != 1) {
+    //         if($user['username']) {
+    //             $visitor = $user['username'];
+    //         }else {
+    //             $visitor = 'TRION NGUYEN';
+    //         }
+     
+    //         $path = $root.'/upload/log_access/log_access.txt';
+    //         $f = fopen($path, 'a');
+    //         fwrite($f, $visitor.'|'.$_SERVER['REQUEST_URI'].'|'.time().'|'.$_SERVER['REMOTE_ADDR']."\n");
+    //         fclose($f);
+    //     }        
+    // }
+
+    // public function access_url() {
+    //     global $root;
+    //     $user = $this->user();
+
+    //     if($user['admin'] != 1) {
+    //         if($user['username']) {
+    //             $visitor = $user['username'];
+    //         }else {
+    //             $visitor = 'TRION NGUYEN';
+    //         }
+     
+    //         $path = $root.'/upload/log_access/log_access.txt';
+    //         $f = fopen($path, 'a');
+    //         fwrite($f, $visitor.'|'.$_SERVER['REQUEST_URI'].'|'.time().'|'.$_SERVER['REMOTE_ADDR']."\n");
+    //         fclose($f);
+    //     }        
+    // }
+
     public function access_url() {
         global $root;
         $user = $this->user();
-
+    
         if($user['admin'] != 1) {
-            if($user['username']) {
-                $visitor = $user['username'];
-            }else {
-                $visitor = 'DUY GAMING';
-            }
-     
-            $path = $root.'/shopvip/upload/log_access/log_access.txt';
+            $visitor = $user['username'] ?? 'TRION NGUYEN';
+            $path = $root.'/upload/log_access/log_access.txt';
             $f = fopen($path, 'a');
-            fwrite($f, $visitor.'|'.$_SERVER['REQUEST_URI'].'|'.time().'|'.$_SERVER['REMOTE_ADDR']."\n");
-            fclose($f);
+    
+            if ($f !== false) {
+                fwrite($f, $visitor.'|'.$_SERVER['REQUEST_URI'].'|'.time().'|'.$_SERVER['REMOTE_ADDR']."\n");
+                fclose($f);
+            } else {
+                // Xử lý lỗi không mở được file
+                error_log("Không thể mở file log: $path");
+            }
         }        
     }
 
@@ -288,7 +325,7 @@ return $id;
 
     public function vongquaykimcuong_image($id, $type) {
 
-        $path = $_SERVER["DOCUMENT_ROOT"]."/upload/vongquay_kimcuong/".$type;
+        $path = $_SERVER["DOCUMENT_ROOT"]."/shopvip/upload/vongquay_kimcuong/".$type;
 
                   if ($opendirectory = opendir($path)){
                     while (($file = readdir($opendirectory)) !== false){
@@ -296,7 +333,7 @@ return $id;
                         if ($file != "." && $file != "..") {
                             $arr = explode(".", $file);
                             if($arr[0] == $id) {
-                               return '/upload/vongquay_kimcuong/'.$type.'/'.$file;
+                               return '/shopvip/upload/vongquay_kimcuong/'.$type.'/'.$file;
                             }
                         }
                     }

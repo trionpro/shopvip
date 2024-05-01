@@ -14,9 +14,9 @@
 
             <div class="c-content-ver-nav">
                 <ul class="c-menu c-arrow-dot c-square c-theme">
-                    <li><a href="/user/thongtin" class="active">Thông tin</a></li>
-                    <li><a href="/user/doimatkhau" class="">Đổi mật khẩu</a></li>
-                    <li><a href="/user/lichsugiaodich" class="">Lịch sử giao dịch</a></li>
+                    <li><a href="/shopvip/user/thongtin" class="active">Thông tin</a></li>
+                    <li><a href="/shopvip/user/doimatkhau" class="">Đổi mật khẩu</a></li>
+                    <li><a href="/shopvip/user/lichsugiaodich" class="">Lịch sử giao dịch</a></li>
                 </ul>
             </div>
         </div>
@@ -31,23 +31,23 @@
 
                     <li><a data-toggle="collapse" data-parent="#accordion1" class="cmenu-parrent collapsed" href="#napthe" aria-expanded="false">Nạp Thẻ</a>
                     <ul id="napthe" class="children collapse" aria-expanded="false" style="height: 0px;">
-                        <li><a href="/user/napthe" class="">Nạp thẻ</a></li>
-                        <li><a href="/user/lichsunapthe" class="">Lịch sử nạp thẻ</a></li>
+                        <li><a href="/shopvip/user/napthe" class="">Nạp thẻ</a></li>
+                        <li><a href="/shopvip/user/lichsunapthe" class="">Lịch sử nạp thẻ</a></li>
                     </ul>
                     </li>
 
                     <li><a data-toggle="collapse" data-parent="#accordion1" class="cmenu-parrent collapsed" href="#rutkimcuong" aria-expanded="false">Rút Kim Cương</a>
                     <ul id="rutkimcuong" class="children collapse" aria-expanded="false" style="height: 0px;">
-                        <li><a href="/user/rutkimcuong" class="">Rút Kim Cương</a></li>
-                        <li><a href="/user/lichsurutkimcuong" class="">Lịch sử rút</a></li>
+                        <li><a href="/shopvip/user/rutkimcuong" class="">Rút Kim Cương</a></li>
+                        <li><a href="/shopvip/user/lichsurutkimcuong" class="">Lịch sử rút</a></li>
                     </ul>
                     </li>
 
 
                     <li><a data-toggle="collapse" data-parent="#accordion1" class="cmenu-parrent collapsed" href="#nickdamua" aria-expanded="false">Nick Đã Mua</a>
                     <ul id="nickdamua" class="children collapse" aria-expanded="false" style="height: 0px;">
-                        <li><a href="/user/accfreefire" class="">Nick Freefire</a></li>
-                        <li><a href="/user/random-freefire" class="">Nick Random Freefire</a></li>
+                        <li><a href="/shopvip/user/accfreefire" class="">Nick Freefire</a></li>
+                        <li><a href="/shopvip/user/random-freefire" class="">Nick Random Freefire</a></li>
                     </ul>
                     </li>
 

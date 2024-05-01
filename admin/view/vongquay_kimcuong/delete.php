@@ -4,6 +4,5 @@ if(!$kun->is_admin()) {
 }else {
 	mysqli_query($kun->connect_db(), "DELETE FROM `vongquay_kimcuong` WHERE `id`='".$_GET['id']."'");
 	mysqli_query($kun->connect_db(), "DELETE FROM `vongquay_kimcuong_gift` WHERE `id_vongquay`='".$_GET['id']."'");
-	echo '<script>location.href="/admin/?modun=vongquay_kimcuong&act=index";</script>';
+	echo '<script>location.href="/shopvip/admin/?modun=vongquay_kimcuong&act=index";</script>';
 }
-?>
