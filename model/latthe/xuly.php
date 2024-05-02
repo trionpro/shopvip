@@ -26,8 +26,8 @@ if($row['giatien'] > $user['money']) {
 }
 
 // thư viện tỷ lệ
-	require $_SERVER['DOCUMENT_ROOT'].'/lib/BiasedRandom/Element.php';
-	require $_SERVER['DOCUMENT_ROOT'].'/lib/BiasedRandom/Randomizer.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/shopvip/lib/BiasedRandom/Element.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/shopvip/lib/BiasedRandom/Randomizer.php';
 
 
 // chạy tỷ lệ

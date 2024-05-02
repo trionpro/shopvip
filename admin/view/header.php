@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -19,7 +18,7 @@
     <link href="/shopvip/admin/assets/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="/shopvip/admin/assets/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/shopvip/admin/assets/dist/css/style.min.css?i=<?php echo rand(0,564564);?>" rel="stylesheet">
+    <link href="/shopvip/admin/assets/dist/css/style.min.css?i=<?php echo rand(0, 564564); ?>" rel="stylesheet">
     <link href="/shopvip/admin/assets/assets/libs/switch-checkbox/style.css" rel="stylesheet">
     <!-- ============================================================== -->
     <!-- All Jquery -->
@@ -39,17 +38,30 @@
     <script src="/shopvip/admin/assets/assets/extra-libs/c3/d3.min.js"></script>
     <script src="/shopvip/admin/assets/assets/extra-libs/c3/c3.min.js"></script>
     <script src="/shopvip/admin/assets/assets/libs/chartist/dist/chartist.min.js"></script>
-<!--    <script src="/admin/assets/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script> -->
+    <!--    <script src="/admin/assets/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script> -->
     <script src="/shopvip/admin/assets/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="/shopvip/admin/assets/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
-<!--        <script src="/admin/assets/dist/js/pages/dashboards/dashboard1.min.js"></script> -->
+    <!--        <script src="/admin/assets/dist/js/pages/dashboards/dashboard1.min.js"></script> -->
 
-<style type="text/css">
-    body, a, input, li, div, button, span, h1,h2,h3,h4,h5, nav, ul {
-        font-family: 'Josefin Sans', sans-serif;
-        cursor: url('/shopvip/admin/assets/custom/arrow.cur'), auto;
-    }
-</style>
+    <style type="text/css">
+        body,
+        a,
+        input,
+        li,
+        div,
+        button,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        nav,
+        ul {
+            font-family: 'Josefin Sans', sans-serif;
+            cursor: url('/shopvip/admin/assets/custom/arrow.cur'), auto;
+        }
+    </style>
 
 </head>
 
@@ -82,20 +94,24 @@
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
                         <!-- Logo icon -->
-                        <a href="index.html">
+                        <a href="/shopvip/admin">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="/shopvip/admin/assets/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                <img src="/shopvip/admin/assets/assets/images/logo-icon.png" alt="homepage"
+                                    class="dark-logo" />
                                 <!-- Light Logo icon -->
-                                <img src="/shopvip/admin/assets/assets/images/logo-icon.png" alt="homepage" class="light-logo" />
+                                <img src="/shopvip/admin/assets/assets/images/logo-icon.png" alt="homepage"
+                                    class="light-logo" />
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="/shopvip/admin/assets/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                <img src="/shopvip/admin/assets/assets/images/logo-text.png" alt="homepage"
+                                    class="dark-logo" />
                                 <!-- Light Logo text -->
-                                <img src="/shopvip/admin/assets/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                <img src="/shopvip/admin/assets/assets/images/logo-light-text.png" class="light-logo"
+                                    alt="homepage" />
                             </span>
                         </a>
                     </div>
@@ -129,13 +145,14 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="https://graph.facebook.com/picture?id=100041463755697&width=1000&height=1000" alt="user" class="rounded-circle"
-                                    width="40">
-                                <span class="text-dark"><?php echo $user['name'];?></span> <i data-feather="chevron-down" class="svg-icon"></i></span>
+                                <img src="https://graph.facebook.com/picture?id=100041463755697&width=1000&height=1000"
+                                    alt="user" class="rounded-circle" width="40">
+                                <span class="text-dark"><?php echo $user['name']; ?></span> <i
+                                    data-feather="chevron-down" class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/signout.html"><i data-feather="power"
+                                <a class="dropdown-item" href="/shopvip/signout.html"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Đăng Xuất</a>
                         </li>
@@ -165,9 +182,10 @@
 
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="/shopvip/admin/?modun=vongquay_kimcuong&act=index"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Vòng quay may mắn
+                        <li class="sidebar-item"> <a class="sidebar-link"
+                                href="/shopvip/admin/?modun=vongquay_kimcuong&act=index" aria-expanded="false"><i
+                                    data-feather="tag" class="feather-icon"></i><span class="hide-menu">Vòng quay may
+                                    mắn
                                 </span></a>
                         </li>
 
@@ -177,27 +195,31 @@
                                     class="hide-menu">Dịch Vụ FreeFire</span></a>
                             <ul aria-expanded="false" class="collapse first-level base-level-line">
 
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=sieucap&act=index" class="sidebar-link"><span
-                                            class="hide-menu">Vòng Quay Siêu Cấp</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=sieucap&act=index"
+                                        class="sidebar-link"><span class="hide-menu">Vòng Quay Siêu Cấp</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=bingo&act=index" class="sidebar-link"><span
-                                            class="hide-menu">Vận May Bingo</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=bingo&act=index"
+                                        class="sidebar-link"><span class="hide-menu">Vận May Bingo</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=homthinhbian&act=index" class="sidebar-link"><span
-                                            class="hide-menu">Hòm Thính Bí Ẩn</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=homthinhbian&act=index"
+                                        class="sidebar-link"><span class="hide-menu">Hòm Thính Bí Ẩn</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=latthe&act=index" class="sidebar-link"><span
-                                            class="hide-menu">Lật Hình May Mắn</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=latthe&act=index"
+                                        class="sidebar-link"><span class="hide-menu">Lật Hình May Mắn</span></a>
                                 </li>
 
 
                                 <li class="sidebar-item"> <a class="has-arrow sidebar-link" href="javascript:void(0)"
                                         aria-expanded="false"><span class="hide-menu">Vòng Quay Súng</span></a>
                                     <ul aria-expanded="false" class="collapse second-level base-level-line">
-                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=vongquaycodesung&act=index" class="sidebar-link"><span
-                                                    class="hide-menu">Cài Đặt Tỉ Lệ</span></a></li>
-                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=vongquaycodesung&act=update_code" class="sidebar-link"><span
-                                                    class="hide-menu">Danh Sách Code</span></a></li>
+                                        <li class="sidebar-item"><a
+                                                href="/shopvip/admin/?modun=vongquaycodesung&act=index"
+                                                class="sidebar-link"><span class="hide-menu">Cài Đặt Tỉ Lệ</span></a>
+                                        </li>
+                                        <li class="sidebar-item"><a
+                                                href="/shopvip/admin/?modun=vongquaycodesung&act=update_code"
+                                                class="sidebar-link"><span class="hide-menu">Danh Sách Code</span></a>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -207,10 +229,12 @@
                                 <li class="sidebar-item"> <a class="has-arrow sidebar-link" href="javascript:void(0)"
                                         aria-expanded="false"><span class="hide-menu">Bán Nick Freefire</span></a>
                                     <ul aria-expanded="false" class="collapse second-level base-level-line">
-                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=accff&act=index" class="sidebar-link"><span
-                                                    class="hide-menu">Đăng Bán Nick</span></a></li>
-                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=accff&act=list" class="sidebar-link"><span
-                                                    class="hide-menu">Danh Sách Nick</span></a></li>
+                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=accff&act=index"
+                                                class="sidebar-link"><span class="hide-menu">Đăng Bán Nick</span></a>
+                                        </li>
+                                        <li class="sidebar-item"><a href="/shopvip/admin/?modun=accff&act=list"
+                                                class="sidebar-link"><span class="hide-menu">Danh Sách Nick</span></a>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -227,25 +251,27 @@
                                     class="hide-menu">Random FreeFire</span></a>
                             <ul aria-expanded="false" class="collapse first-level base-level-line">
 
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=random_freefire&act=add_nick" class="sidebar-link"><span
-                                            class="hide-menu">Đăng Bán Random</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=random_freefire&act=add_nick"
+                                        class="sidebar-link"><span class="hide-menu">Đăng Bán Random</span></a>
                                 </li>
 
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=random_freefire&act=index" class="sidebar-link"><span
-                                            class="hide-menu">Danh Sách Gói Random</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=random_freefire&act=index"
+                                        class="sidebar-link"><span class="hide-menu">Danh Sách Gói Random</span></a>
                                 </li>
 
 
-                                    <?php 
-                                    $quas = mysqli_query($kun->connect_db(), "SELECT * FROM `random_freefire`");
-                                    while ($rose = mysqli_fetch_array($quas)) {
-                                            ?>
-                                        <li class="sidebar-item"><a href="/shopvip/admin/list_acc_random/<?php echo $rose['cname'];?>" class="sidebar-link"><span
-                                            class="hide-menu"><?php echo $rose['name'];?></span></a>
-                                </li>
-                                    <?php
-                                        }
+                                <?php
+                                $quas = mysqli_query($kun->connect_db(), "SELECT * FROM `random_freefire`");
+                                while ($rose = mysqli_fetch_array($quas)) {
                                     ?>
+                                    <li class="sidebar-item"><a
+                                            href="/shopvip/admin/list_acc_random/<?php echo $rose['cname']; ?>"
+                                            class="sidebar-link"><span
+                                                class="hide-menu"><?php echo $rose['name']; ?></span></a>
+                                    </li>
+                                    <?php
+                                }
+                                ?>
 
 
                             </ul>
@@ -253,25 +279,29 @@
 
 
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="/shopvip/admin/?modun=giftcode&act=index"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">GiftCode Giảm Giá
+                        <li class="sidebar-item"> <a class="sidebar-link"
+                                href="/shopvip/admin/?modun=giftcode&act=index" aria-expanded="false"><i
+                                    data-feather="tag" class="feather-icon"></i><span class="hide-menu">GiftCode Giảm
+                                    Giá
                                 </span></a>
                         </li>
 
-<?php if(mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2'")) > 0) $new = '<span class="btn btn-danger btn-sm">'.mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2'")).'</span>'; ?>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="/shopvip/admin/?modun=rut_kim_cuong&act=index"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Duyệt KC <?=$new;?>
+                        <?php if (mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2'")) > 0)
+                            $new = '<span class="btn btn-danger btn-sm">' . mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `rut_kim_cuong` WHERE `status`='2'")) . '</span>'; ?>
+                        <li class="sidebar-item"> <a class="sidebar-link"
+                                href="/shopvip/admin/?modun=rut_kim_cuong&act=index" aria-expanded="false"><i
+                                    data-feather="tag" class="feather-icon"></i><span class="hide-menu">Duyệt KC
+                                    <?= $new; ?>
                                 </span></a>
                         </li>
 
 
 
-<?php if(mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `napthe` WHERE `status`='2'")) > 0) $new2 = '<span class="btn btn-danger btn-sm">'.mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `napthe` WHERE `status`='2'")).'</span>'; ?>
+                        <?php if (mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `napthe` WHERE `status`='2'")) > 0)
+                            $new2 = '<span class="btn btn-danger btn-sm">' . mysqli_num_rows(mysqli_query($kun->connect_db(), "SELECT * FROM `napthe` WHERE `status`='2'")) . '</span>'; ?>
                         <li class="sidebar-item"> <a class="sidebar-link" href="/shopvip/admin/thenap"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Thẻ Nạp <?=$new2;?>
+                                    class="hide-menu">Thẻ Nạp <?= $new2; ?>
                                 </span></a>
                         </li>
 
@@ -289,35 +319,35 @@
                                     class="hide-menu">WebSite Setting</span></a>
                             <ul aria-expanded="false" class="collapse first-level base-level-line">
 
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=chung" class="sidebar-link"><span
-                                            class="hide-menu">Cài Đặt Chung</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=chung"
+                                        class="sidebar-link"><span class="hide-menu">Cài Đặt Chung</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=danh_muc" class="sidebar-link"><span
-                                            class="hide-menu">Hiển Thị Danh Mục</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=danh_muc"
+                                        class="sidebar-link"><span class="hide-menu">Hiển Thị Danh Mục</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=game_status" class="sidebar-link"><span
-                                            class="hide-menu">Hiển Thị Game</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=game_status"
+                                        class="sidebar-link"><span class="hide-menu">Hiển Thị Game</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=game_images" class="sidebar-link"><span
-                                            class="hide-menu">Cài Đặt Ảnh Game</span></a>
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=web_setting&act=game_images"
+                                        class="sidebar-link"><span class="hide-menu">Cài Đặt Ảnh Game</span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=update&act=update" class="sidebar-link"><span
-                                            class="hide-menu">Cập Nhật Hệ Thống</span></a>
-                                </li>                                
+                                <li class="sidebar-item"><a href="/shopvip/admin/?modun=update&act=update"
+                                        class="sidebar-link"><span class="hide-menu">Cập Nhật Hệ Thống</span></a>
+                                </li>
                                 <li class="sidebar-item"><a href="javascript:void(cc())" class="sidebar-link"><span
                                             class="hide-menu">RESET TOP NẠP</span></a>
                                 </li>
-                            <script type="text/javascript">
-                            function cc() {
-                                if(confirm('Bạn Có Muốn Reset Top Nạp Không?') == true){
-                                    if(confirm('Bạn Có Muốn Reset Top Nạp Không? Hỏi lần thứ 2') == true){
-                                        if(confirm('Bạn Có Muốn Reset Top Nạp Không? Lần cuối?') == true){
-                                            window.location.href = "/shopvip/admin/reset_topnap.php";
+                                <script type="text/javascript">
+                                    function cc() {
+                                        if (confirm('Bạn Có Muốn Reset Top Nạp Không?') == true) {
+                                            if (confirm('Bạn Có Muốn Reset Top Nạp Không? Hỏi lần thứ 2') == true) {
+                                                if (confirm('Bạn Có Muốn Reset Top Nạp Không? Lần cuối?') == true) {
+                                                    window.location.href = "/shopvip/admin/reset_topnap.php";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-                            </script>
+                                </script>
 
 
                             </ul>
@@ -343,8 +373,8 @@
 
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-<div class="container-fluid">
+            <div class="container-fluid">
                 <!-- *************************************************************** -->
                 <!-- Start First Cards -->
-                <!-- *************************************************************** -->    
-            <div id="main-kunkey">
+                <!-- *************************************************************** -->
+                <div id="main-kunkey">
